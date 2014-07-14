@@ -3,6 +3,16 @@ Fresh Redis
 
 A simple, JSON-oriented wrapper around Redis that provides easy mechanisms for keeping your cache fresh.
 
+### Config
+
+Set up a Redis client instance as $redis in your config files either as an initializer or in your environments files.
+
+```ruby
+$redis = Redis.new(:host => 'localhost', :port => 6379)
+```
+
+This is where you'd set up a namespace, if you want one.
+
 ### Retrieve a cached value stored under key "foo"
 ```ruby
 FreshRedis.get("foo")
