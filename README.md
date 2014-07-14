@@ -38,6 +38,8 @@ FreshRedis.freshen("foo", 5.minutes, :json) do
 end
 ```
 
+You can set the expire time to 0.minutes to effectively disable caching.
+
 ### Set a value under key "foo" with no expiration
 ```ruby
   FreshRedis.set("foo", {your_age: 30})
