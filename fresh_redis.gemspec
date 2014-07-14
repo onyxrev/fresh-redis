@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'fresh-redis'
-  s.version     = '0.8.2'
+  s.version     = '0.8.2.1'
   s.date        = '2014-07-12'
   s.summary     = "A simple wrapper around Redis in Ruby that provides easy mechanisms for keeping your cache fresh, particularly with JSON"
   s.description = "A simple wrapper around Redis in Ruby that provides easy mechanisms for keeping your cache fresh, particularly with JSONm"

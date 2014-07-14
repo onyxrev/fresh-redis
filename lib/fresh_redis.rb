@@ -27,4 +27,10 @@ class FreshRedis
   def self.unset(name)
     return $redis.del(name) == 1
   end
+
+  private
+
+  def self.skip_cache?
+    false
+  end
 end
